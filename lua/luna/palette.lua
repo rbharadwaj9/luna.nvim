@@ -50,7 +50,7 @@ palette.number = palette.keyword -- alias, not a copy: numeric literals share th
 
 palette.cursor_line = { bg = "#212121" }
 palette.cursor_line_nr = { fg = palette.silver }
-palette.line_nr = Util.blend_bg(palette.grey_warm, 0.45, palette.bg)
+palette.line_nr = Util.blend_bg(palette.grey_warm, 0.90, palette.bg)
 
 -- Whole-line diff backgrounds are subtle tints of the same hue as the fg,
 -- so DiffAdd/DiffChange/DiffDelete read as one family instead of flat grey.
