@@ -8,6 +8,7 @@ local insert_bg = c.type
 local visual_bg = c.grey_light
 local replace_bg = c.comment
 local command_bg = c.silver
+local terminal_bg = c.string
 local section_c_bg = opts.transparent and "NONE" or c.bg
 
 return {
@@ -33,6 +34,11 @@ return {
   },
   command = {
     a = { fg = c.black, bg = command_bg },
+    b = { fg = c.fg, bg = c.bg_alt },
+    c = { fg = c.fg_bright, bg = section_c_bg },
+  },
+  terminal = {
+    a = { fg = c.black, bg = terminal_bg },
     b = { fg = c.fg, bg = c.bg_alt },
     c = { fg = c.fg_bright, bg = section_c_bg },
   },
